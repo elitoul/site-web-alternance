@@ -55,107 +55,15 @@ a {
     color: black;   
 }
 
-
-.header_main_sm {
-    height: 100%;
-    width: fit-content;
-    padding-right: 20px;
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
-}
-
-.contact_logo {
-    display: flex;
-    justify-content: space-around;
-}
-
 .hero_banner {
     width: 100%;
     height: 600px;
     background-color: red;
 }
 
-.contact_logo_github {
-    height: 70px;
-    width: 70px;
-    background-image: url(img/github.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+.hero_banner_title {
 }
 
-.contact_logo_github:hover {
-    height: 80px;
-    width: 80px;
-    transition: 1s;
-}
 
-.contact_logo_tryhackme {
-    height: 70px;
-    width: 70px;
-    background-image: url(img/tryhackme-dark.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.contact_logo_tryhackme:hover {
-    height: 80px;
-    width: 80px;
-    transition: 1s;
-}
-
-.contact_logo_rootmepro {
-    height: 70px;
-    width: 70px;
-    background-image: url(img/root-me-pro.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.contact_logo_rootmepro:hover {
-    height: 80px;
-    width: 80px;
-    transition: 1s;
-}
-
-.contact_logo_linkedin {
-    height: 70px;
-    width: 70px;
-    background-image: url(img/linkedin.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.contact_logo_linkedin:hover {
-    height: 80px;
-    width: 80px;
-    transition: 1s;
-}
-
-.contact_logo_telephone {
-    height: 70px;
-    width: 70px;
-    background-image: url(img/appel-telephonique.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.contact_logo_telephone:hover {
-    height: 80px;
-    width: 80px;
-    transition: 1s;
-}
-
-.contact_logo_gmail {
-    height: 70px;
-    width: 70px;
-    background-image: url(img/gmail.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.contact_logo_gmail:hover {
-    height: 80px;
-    width: 80px;
-    transition: 1s;
+.hero_banner_description {
 }
