@@ -1,69 +1,100 @@
 body {
     margin: 0%;
-    padding: 0%;
-    background-color: #c6def1;
+padding: 0%;
+background-color: 
+#c6def1;
 }
-
 a {
-    cursor: pointer;
+cursor: pointer;
 }
-
 .header_main {
-    height: 80px;
-    width: 100%;
-    background-color: #f9c6c9;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
+height: 80px;
+width: 100%;
+background-color: 
+#f9c6c9;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: relative;
 }
-
 .header_main_logo {
-    height: 100%;
-    width: fit-content;
-    display: flex;
+height: 100%;
+width: fit-content;
+display: flex;
 }
-
 .header_main_logo img {
-    height: 80px;
-    align-self: center;
+height: 80px;
+align-self: center;
 }
 .header_main_nav {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
 }
-
 .header_main_nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
+list-style: none;
+display: flex;
+gap: 20px;
+margin: 0;
+padding: 0;
 }
-
 .header_main_nav ul li a {
-    padding: 0 10px;
-    line-height: 60px;
-    text-decoration: none;
-    color: #8a716a;
-    display: block;
-    height: 100%;
+padding: 0 10px;
+line-height: 60px;
+text-decoration: none;
+color: 
+#8a716a;
+display: block;
+height: 100%;
 }
-
 .header_main_nav ul li a:hover{
-    color: black;   
+color: black;   
 }
-
 .hero_banner {
     width: 100%;
     height: 600px;
     background-color: red;
+    position: relative;
+    padding-top: 20px;
+}
+
+.hero_banner_name {
+    margin-left: 100px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.hero_banner_tag {
+    margin-left: 200px;
+    margin-top: 0;
 }
 
 .hero_banner_title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
 }
 
-
 .hero_banner_description {
+    width: 90%;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.hero_banner_card {
+display: flex;
+justify-content: center;
+}
+
+.hero_banner_card_type {
+height: fit-content;
+width: fit-content;
+background-color: pink;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+margin: 10px;
 }
