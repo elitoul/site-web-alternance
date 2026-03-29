@@ -130,31 +130,3 @@ body {
     width: 80px;
     transition: 1s;
 }
-
-.contact_logo_telephone {
-    height: 70px;
-    width: 70px;
-    background-image: url(img/appel-telephonique.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.contact_logo_telephone:hover {
-    height: 80px;
-    width: 80px;
-    transition: 1s;
-}
-
-.contact_logo_gmail {
-    height: 70px;
-    width: 70px;
-    background-image: url(img/gmail.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.contact_logo_gmail:hover {
-    height: 80px;
-    width: 80px;
-    transition: 1s;
-}
