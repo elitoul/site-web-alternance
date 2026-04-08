@@ -1,42 +1,41 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ma Formation - BTS SIO SISR</title>
     <link rel="stylesheet" href="degree.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header_main">
-
         <div class="header_main_logo">
-            <a href="/index.html">
-                <img src="img/logo site web.png" alt="mii_avatar">
+            <a href="index.html">
+                <img src="img/logo site web.png" alt="logo">
             </a>
         </div>
 
         <nav class="header_main_nav">
-                <ul>
-                    <li><a href="/about.html">À propos de moi</a></li>
-                    <li><a href="/degree.html">Ma formation</a></li>
-                    <li><a href="/project.html">Projets</a></li>
-                    <li><a href="/contact.html">Contact</a></li>
-
-                </ul>
+            <ul>
+                <li><a href="about.html">À propos de moi</a></li>
+                <li><a href="degree.html">Ma formation</a></li>
+                <li><a href="project.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <div class="global_title">
         <h1>BTS SIO SISR</h1>
-
         <p>Services Informatiques aux Organisations - Solutions d'Infrastructure, Systèmes et Réseaux</p>
     </div>
 
-    <div class="global_description">
+    <section class="global_description">
         <div class="description">
             <h2 class="description_title">Tour d'horizon</h2>
-            <p>Diplôme de deux ans mélant pratique et théorie centré sur l'administration des systèmes,
+            <p>Diplôme de deux ans mêlant pratique et théorie centré sur l'administration des systèmes,
                 les réseaux informatiques et la cybersécurité visant à former des étudiants prêts pour le
                 monde professionnel.</p>
         </div>
@@ -52,25 +51,26 @@
                 <li>Projets réseau et systèmes sécurisés</li>
             </ul>
         </div>
-        
-    </div>
+    </section>
 
     <div class="skills_title">
-            <h2>Compétences</h2>
+        <h2>Compétences Techniques</h2>
+        <button id="toggleSkills" class="btn_toggle">Afficher les détails</button>
     </div>
     
-    <div class="skills">
-
-        <div class="network">Réseau
+    <div class="skills hidden" id="skillsSection">
+        <div class="skill_card network">
+            <h3>Réseau</h3>
             <ul>
-                <li>Configuration de routeur CISCO 2960, ASR1001</li>
+                <li>Configuration CISCO 2960, ASR1001</li>
                 <li>Configuration de VLAN</li>
-                <li>Dés/activation d'interfaces sur routeur et switch</li>
-                <li>Support technique N1 et assistance utilisateur</li>
+                <li>Gestion d'interfaces</li>
+                <li>Support technique N1</li>
             </ul>
         </div>
 
-        <div class="programmation">Programmation
+        <div class="skill_card programmation">
+            <h3>Programmation</h3>
             <ul>
                 <li>Python</li>
                 <li>C++</li>
@@ -78,25 +78,52 @@
             </ul>
         </div>
 
-        <div class="web_development">Développement web
+        <div class="skill_card web_development">
+            <h3>Développement web</h3>
             <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
+                <li>HTML / CSS / JS</li>
                 <li>GSAP</li>
             </ul>
         </div>
 
-        <div class="tools ">Outils de travail
+        <div class="skill_card tools">
+            <h3>Outils de travail</h3>
             <ul>
-                <li>Git</li>
-                <li>VS Code</li>
-                <li>APIs</li>
-                <li>EVE-NG</li>
-                <li>VMWare</li>
+                <li>Git / VS Code</li>
+                <li>EVE-NG / VMWare</li>
                 <li>Cisco Packet Tracer</li>
             </ul>
         </div>
     </div>
+
+<script>
+    // 1. On cible les éléments
+    const btn = document.getElementById('toggleSkills');
+    const skillsSection = document.getElementById('skillsSection');
+
+    // 2. On écoute le clic
+    btn.addEventListener('click', () => {
+        // A. On bascule l'affichage (Toggle)
+        skillsSection.classList.toggle('hidden');
+
+        // B. On vérifie l'état actuel (Est-ce caché ?)
+        const isHidden = skillsSection.classList.contains('hidden');
+
+        // C. On met à jour le texte du bouton
+        btn.textContent = isHidden ? "Afficher les détails" : "Masquer les détails";
+
+        // D. DÉROULEMENT AUTOMATIQUE
+        // Si la section n'est PAS cachée (donc elle vient d'être ouverte)
+        if (!isHidden) {
+            // On laisse 150ms au CSS pour commencer à ouvrir la div
+            setTimeout(() => {
+                skillsSection.scrollIntoView({ 
+                    behavior: 'smooth', // Animation fluide
+                    block: 'end'      // Aligne le haut de la section au haut de l'écran
+                });
+            }, 600);
+        }
+    });
+</script>
 </body>
 </html>
