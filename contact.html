@@ -1,74 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link rel="stylesheet" href="contact.css">
-</head>
-<body>
-     <header class="header_main">
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <header class="header_main">
+      <div class="header_main_logo">
+        <a href="/index.html">
+          <img src="img/logo site web.png" alt="logo" />
+        </a>
+      </div>
 
-        <div class="header_main_logo">
-            <a href="index.html">
-                <img src="img/logo_site_web.png" alt="mii_avatar">
-            </a>
-        </div>
+      <nav class="header_main_nav">
+        <ul>
+          <li><a href="about.html">À propos de moi</a></li>
+          <li><a href="degree.html">Ma formation</a></li>
+          <li><a href="project.html">Projets</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        <nav class="header_main_nav">
-                <ul>
-                    <li><a href="about.html">À propos de moi</a></li>
-                    <li><a href="degree.html">Ma formation</a></li>
-                    <li><a href="project.html">Projets</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-
-                </ul>
-        </nav>
-
-        
-    </header> 
-    
-    <p>Si vous êtes intéressé par les différents projets présentés et mes compétences, je vous invite très fortement à me contacter. Je serai ravi de discuter avec vous dans
-        le cadre de ma recherche d'alternance pour mon diplôme BTS SIO option SISR ou autour de mon avenir professionnel.
+    <p>
+      Si vous êtes intéressé par les différents projets présentés et mes
+      compétences, je vous invite très fortement à me contacter. Je serai ravi
+      de discuter avec vous dans le cadre de ma recherche d'alternance pour mon
+      diplôme BTS SIO option SISR ou autour de mon avenir professionnel.
     </p>
 
     <section class="contact_intel">
-        <form action="https://formspree.io/f/maqlznnw" method="POST">
+      <div class="contact_intel_form">
+        <input
+          type="text"
+          name="company"
+          placeholder="Société"
+          autocomplete="off"
+          required
+        />
+        <input
+          type="integer"
+          name="phone"
+          placeholder="Numéro de téléphone"
+          autocomplete="off"
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Adresse email"
+          autocomplete="off"
+          required
+        />
+        <textarea
+          name="message"
+          rows="10"
+          cols="60"
+          placeholder="Que voulez-vous dire ?"
+          autocomplete="off"
+          required
+        ></textarea>
+        <button type="submit">Envoyé</button>
+      </div>
 
-        <div class="contact_intel_form">
-            <input type="text" name="company" placeholder="Société" autocomplete="off" required>
-            <input type="tel" name="phone" placeholder="Numéro de téléphone" autocomplete="off" required>
-            <input type="email" name="email" placeholder="Adresse email" autocomplete="off" required>
-            <textarea name="message" rows="10" cols="60" placeholder="Que voulez-vous dire ?" autocomplete="off" required></textarea>
-            <button type="submit">Envoyé</button>           
-        </div>
-        </form>
+      <div class="contact_intel_logo">
+        <a href="https://github.com/elitoul" target="_blank">
+          <div class="contact_intel_logo_github">
+            <img src="img/github.png" alt="logo github" />
+          </div>
+        </a>
 
-        <div class="contact_intel_logo">
-            <a href="https://github.com/elitoul" target="_blank">
-            <div class="contact_intel_logo_github">
-                <img src="img/github.png" alt="logo github">
-            </div>
-            </a>
+        <a
+          href="https://www.linkedin.com/in/%F0%9F%94%92-eliaz-toulougoussou-🦊-76448a313/"
+          target="_blank"
+        >
+          <div class="contact_intel_logo_linkedin">
+            <img src="img/linkedin.png" alt="" />
+          </div>
+        </a>
 
-            <a href="https://www.linkedin.com/in/%F0%9F%94%92-eliaz-toulougoussou-🦊-76448a313/" target="_blank">
-            <div class="contact_intel_logo_linkedin">
-                <img src="img/linkedin.png" alt="">
-            </div>
-            </a>
+        <a href="https://tryhackme.com/p/.eli" target="_blank">
+          <div class="contact_intel_logo_tryhackme">
+            <img src="img/tryhackme-dark.png" alt="" />
+          </div>
+        </a>
 
-            <a href="https://tryhackme.com/p/.eli" target="_blank">
-            <div class="contact_intel_logo_tryhackme">
-                <img src="img/tryhackme-dark.png" alt="">
-            </div>
-            </a>
-
-            <a href="https://www.root-me.org/eli-1084742?lang=fr#03bd37fccc560910fc2db8416a444800" target="_blank">
-            <div class="contact_intel_logo_rootmepro">
-                <img src="img/root-me-pro.png" alt="">
-            </div>
-            </a>
-        </div>
+        <a
+          href="https://www.root-me.org/eli-1084742?lang=fr#03bd37fccc560910fc2db8416a444800"
+          target="_blank"
+        >
+          <div class="contact_intel_logo_rootmepro">
+            <img src="img/root-me-pro.png" alt="" />
+          </div>
+        </a>
+      </div>
     </section>
-</body>
+  </body>
 </html>
